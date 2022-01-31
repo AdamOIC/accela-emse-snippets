@@ -1,8 +1,8 @@
-# accela-emse-snippets README
+# Accela EMSE Snippets README
 
 A [Visual Studio Code](https://code.visualstudio.com/) snippet extension to provide a library of intellisense support on the 9.2 EMSE Accela API, along with some other helpful code that can be run in Script Tester.
 
-Primarily compatible to create and edit Master Scripts 3.0 events, batches, pageflows, expressions, and other scripts written with the standard Rhino JS framework.
+Primarily designed for creating and editing Master Scripts 3.0 events, batches, pageflows, expressions, or other scripts written with the standard Rhino JS framework.
  
 <br>
  
@@ -25,7 +25,7 @@ The intellisense library is loaded with the script root's methods and classes, a
 
 ### Additional Details
 
-Most items have additional info loaded in. It is sourced with the EMSE description and return value.  When viewing the intellisense list, open an item's description with the `>` toggle:
+Most items have additional info loaded in. It is sourced from the EMSE description and return value.  When viewing the intellisense list, open an item's description with the `>` toggle:
 
 ![toggle description](./images/toggle_intellisense_description.gif)
 
@@ -42,7 +42,7 @@ Each parameter has a tab stop. Stay on the home row, tab through them without ha
 
 ### Drilling Down
 
-Need to chain into other classes but are a little unsure where to go? No problem!  Start with your root object and select the item you want, like `aa.cap`. Then trigger intellisense again to get the collection of methods for the class.
+Need to chain into other classes but are a little unsure where to go? No problem!  Start with your root object and select the item you want, like `aa.cap`. Then trigger intellisense again to get the collection of methods for the class. Overloaded methods are appended with a number, step through with arrow keys to see which parameters they take.
 
 ![Drilling Down](./images/ex_drilling_down.gif)
 
@@ -60,7 +60,7 @@ There are a couple other useful snippets for supporting development and testing 
 
 * `_scripttestcapid` enters a few lines of code to generate a capId and cap object from a record AltID, useful as a starting point to explore a particular record.
 
-
+* `ScriptResult.code_block` Adds in the standard .getSuccess()/.getOutput() code block to convert a ScriptResult variable into its output.
 <br>
  
 #
@@ -68,16 +68,16 @@ There are a couple other useful snippets for supporting development and testing 
 <br>
 
 If you are new to VS Code, here are some snippet settings and commands that may impact the experience. These settings are applied globally and are not exclusive to this extension.
-1. To trigger Intellisense, use `Ctrl+Space` (Windows,linux) or `Cmd+Space` (Apple) Many of the items in this extension will require intellisense to be triggered after your selection to see the next level of choices.
+* To trigger Intellisense, use `Ctrl+Space` (Windows,linux) or `Cmd+Space` (Apple) Many of the items in this extension will require intellisense to be triggered after your selection to see the next level of choices.
 
-2. To change the whether snippets are completed by the `tab` key, change the `editor.tabCompletion` setting to on, off, or onlySnippets.
+* To change the whether snippets are completed by the `tab` key, change the `editor.tabCompletion` setting to on, off, or onlySnippets.
 
-3. The intellisense suggestion order can be rearranged. Change the value in the setting `editor.snippetSuggestions`:
+* The intellisense suggestion order can be rearranged. Change the value in the setting `editor.snippetSuggestions`:
     * top: show above other suggestions
     * bottom: show below other suggestions
     * inline: show snippets mixed in with everything else
     * none: turn them off
-4. Snippets providing suggestions can be toggled with the setting `editor.suggest.snippetsPreventQuickSuggestions`: true or false
+* Snippets providing suggestions can be toggled with the setting `editor.suggest.snippetsPreventQuickSuggestions`: true or false
 
  
 <br>
@@ -91,7 +91,6 @@ For example, the InspectionScript method returns are often blank and placed in t
 
 Reach out on the Discord channel to let others know about this extension and give feedback for corrections.
 
-
  
 <br>
  
@@ -102,6 +101,27 @@ Reach out on the Discord channel to let others know about this extension and giv
 
   * Initial release of the snippet extension with support for the aa root, cap, inspections, workflow, and util
 
+* ### 1.0.1 (Beta)
+
+  * Miscellaneous formatting updates.
+  * Added the env and ScriptResult classes
+  * Added a ScriptResult snippet "ScriptResult.code_block" to insert code to convert a ScriptResult return into its output value:
+  <br>
+  `"ScriptResult.code_block" ->`
+  <br>
+  > if(ScriptResultVarible.getSuccess()) {
+  > <br>
+  > &nbsp;&nbsp;&nbsp;&nbsp;ScriptResultVariable = ScriptResultVariable.getOutput();
+  > <br>
+  > } else {
+  > <br>
+  > &nbsp;&nbsp;&nbsp;&nbsp;aa.print("ScriptResult Failed");
+  > <br>
+  > }
+
+* ### 1.0.2
+  * Fixed comment in _scripttestcapid
+  * Addition of capModel and capId Model
  
 <br>
  
