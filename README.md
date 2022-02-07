@@ -123,6 +123,10 @@ Reach out on the Discord channel to let others know about this extension and giv
   * Fixed comment in _scripttestcapid
   * Addition of capModel and capId Model
  
+* ### 1.0.3
+  * ScriptTester code block: Load in INCLUDES_ files with the prefix "_scripttestincludes". Master Scripts are only loaded if you have EMSE_EXECUTE_OPTIONS>USE_MASTER_INCLUDES set to 'Yes'.  The INCLUDES_CUSTOM file will be loaded from Events>Custom Script unless you have a script called 'INCLUDES_CUSTOM' in the agency's Events>Scripts.
+  * Compression of snippet file
+
 <br>
  
 #
