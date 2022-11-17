@@ -90,6 +90,7 @@ There are a couple other useful snippets for supporting development and testing 
 | inspection | com.accela.aa.emse.dom.service.InspectionScriptService | .inspection. |
 | invoice | com.accela.aa.emse.dom.InvoiceScript | .invoice. |
 | parcel | com.accela.aa.emse.dom.ParcelScript | .parcel. |
+| people | com.accela.aa.emse.dom.PeopleScript | .people. |
 | publicUser | com.accela.aa.emse.dom.service.PublicUserScriptService | .publicUser. |
 | owner | com.accela.aa.emse.dom.OwnerScript | .owner. |
 | set | com.accela.aa.emse.dom.service.SetScriptService | .set. |
@@ -173,7 +174,11 @@ Some code blocks, like `_scripttestincludes` are designed to capture a range of 
 
 * ### 1.0.6 -1.0.8
   * Added additional objects
-
+* ### 1.0.9
+  * _scripttestincludes declares the 'ADMIN' userId env variable to support different agency's calls
+  * _scripttestincludes adds an eval for logDebug to support aa.print in the script test window when the function is called in _INCLUDES files
+### 1.1.0
+  * Added additional object
 
 <br>
  
