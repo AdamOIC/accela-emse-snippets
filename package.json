@@ -1,0 +1,28 @@
+{
+    "name": "accela-emse-snippets",
+    "displayName": "Accela EMSE Snippets",
+    "description": "Accela EMSE Snippet Extension displaying available classes, methods, and parameters to help guide development",
+    "version": "1.1.1",
+    "keywords":["Accela","EMSE"],
+    "homepage": "",
+    "author": {"name": "Adam Scott"},
+    "publisher": "ASOBJECTIC",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/AdamOIC/accela-emse-snippets.git"
+      }
+}
