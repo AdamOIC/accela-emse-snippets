@@ -3,6 +3,8 @@
 A [Visual Studio Code](https://code.visualstudio.com/) snippet extension to provide a library of intellisense support on the 9.2 EMSE Accela API, along with some other helpful code that can be run in Script Tester.
 
 Primarily designed for creating and editing Master Scripts 3.0 events, batches, pageflows, expressions, or other scripts written with the standard Rhino JS framework.
+
+I make updates in my free time.  If you like the extension and have found it useful, you can buy me a coffee so I can work late into the night to keep updating it! [https://www.buymeacoffee.com/objectic](https://www.buymeacoffee.com/objectic)
  
 <br>
  
