@@ -181,9 +181,12 @@ Some code blocks, like `_scripttestincludes` are designed to capture a range of 
   * _scripttestincludes adds an eval for logDebug to support aa.print in the script test window when the function is called in _INCLUDES files
 * ### 1.1.0
   * Added additional object
-* ### 1.1.1-1.1.3
+* ### 1.1.1-1.1.4
   * Added calls for ScriptResult.Code_Block
   * Renamed params in some parsed method text, re-formatting throughout library of parsed text
+* ### 1.1.5
+  * Fix aa.sendMail to include the third parameter for email cc
+  * Rename 'CapModel' in _scripttestcapid to 'cap' to allow that code snippet and '_scripttestincludes' to work better together in a variety of agencies.
 
 <br>
  
