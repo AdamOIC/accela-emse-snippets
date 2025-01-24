@@ -187,7 +187,8 @@ Some code blocks, like `_scripttestincludes` are designed to capture a range of 
 * ### 1.1.5
   * Fix aa.sendMail to include the third parameter for email cc
   * Rename 'CapModel' in _scripttestcapid to 'cap' to allow that code snippet and '_scripttestincludes' to work better together in a variety of agencies.
-
+* ### 1.2.0
+  * New code snippet for running WTUA event code - _scripttestWTUA. 
 <br>
  
 #
