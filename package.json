@@ -2,7 +2,7 @@
     "name": "accela-emse-snippets",
     "displayName": "Accela EMSE Snippets",
     "description": "Accela EMSE Snippet Extension displaying available classes, methods, and parameters to help guide development",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "keywords":["Accela","EMSE"],
     "homepage": "",
     "author": {"name": "Adam Scott"},

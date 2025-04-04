@@ -1,6 +1,7 @@
 # Accela EMSE Snippets README
 
 A [Visual Studio Code](https://code.visualstudio.com/) snippet extension to provide a library of intellisense support on the 9.2 EMSE Accela API, along with some other helpful code that can be run in Script Tester.
+A [Visual Studio Code](https://code.visualstudio.com/) snippet extension to provide a library of intellisense support on the EMSE Accela API, along with some other helpful code that can be run in Script Tester.
 
 Primarily designed for creating and editing Master Scripts 3.0 events, batches, pageflows, expressions, or other scripts written with the standard Rhino JS framework.
 
@@ -119,6 +120,7 @@ If you are new to VS Code, here are some snippet settings and commands that may 
 * Snippets providing suggestions can be toggled with the setting `editor.suggest.snippetsPreventQuickSuggestions`: true or false
 
  
+<<<<<<< Updated upstream
 <br>
 
 #
@@ -135,3 +137,6 @@ Some code blocks, like `_scripttestincludes` are designed to capture a range of 
 <br>
  
 **Enjoy!**
+=======
+<br>
+>>>>>>> Stashed changes
